@@ -34,7 +34,7 @@ const loop = setInterval(() => {
 
         clouds.style.animation = 'none';
         clouds.style.right = cloudsPosition + 'px';
-        
+
         clearInterval(loop)
     }
 
@@ -42,5 +42,8 @@ const loop = setInterval(() => {
 
 
 
-document.addEventListener('keydown', jump);
-
+document.addEventListener('keydown', (event) => {
+    if (event.key === ' ' || event.key === 'ArrowUp') {
+        jump();
+    }
+})

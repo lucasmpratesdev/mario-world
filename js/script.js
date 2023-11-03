@@ -37,10 +37,7 @@ const loop = setInterval(() => {
         clouds.style.right = cloudsPosition + 'px';
 
         gameOverImage.src = "./imagens/game-over-image.png";
-        gameOverImage.style.width = '400px';
-        gameOverImage.style.position = 'absolute';
-        gameOverImage.style.left = '50%';
-        gameOverImage.style.transform = 'translateX(-50%)'; 
+        
 
         clearInterval(loop)
     }

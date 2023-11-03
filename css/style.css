@@ -38,6 +38,14 @@
     background: linear-gradient(#87CEEB);
 }
 
+.gameover {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px;
+    animation: colorChange 1s infinite alternate;
+}
+
 @keyframes pipe-animation {
     from {
         right: -80px;
@@ -78,4 +86,13 @@
     to{
         right: 100%;
     }    
+}
+
+@keyframes colorChange {
+    0% {
+        filter: invert(0%); /* 0% de inversão (preto) */
+    }
+    100% {
+        filter: invert(100%); /* 100% de inversão (branco) */
+    }
 }
